@@ -70,7 +70,16 @@ function Hero() {
   );
 }
 
-const TOOLS = [
+type Tool = {
+  to: "/email" | "/summary" | "/planner" | "/chat";
+  icon: typeof Mail;
+  title: string;
+  desc: string;
+  span: string;
+  accent?: boolean;
+};
+
+const TOOLS: Tool[] = [
   {
     to: "/email",
     icon: Mail,

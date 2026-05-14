@@ -10,7 +10,7 @@ const NAV = [
   { to: "/chat", label: "Chat", icon: MessageSquare },
 ] as const;
 
-export function AppShell() {
+export function AppShell({ children }: { children?: React.ReactNode }) {
   const { pathname } = useLocation();
   return (
     <div className="min-h-screen flex flex-col">
@@ -59,9 +59,7 @@ export function AppShell() {
         </div>
       </header>
 
-      <main className="flex-1">
-        <Outlet />
-      </main>
+      <main className="flex-1">{children ?? <Outlet />}</main>
 
       <footer className="border-t border-border mt-20">
         <div className="mx-auto max-w-7xl px-6 py-8 flex flex-wrap items-center justify-between gap-3 text-xs text-muted-foreground">
