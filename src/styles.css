@@ -156,3 +156,42 @@
     pointer-events: none;
   }
 }
+
+@layer components {
+  .prose-helix {
+    color: var(--color-foreground);
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+  .prose-helix h1, .prose-helix h2, .prose-helix h3, .prose-helix h4 {
+    font-family: var(--font-display);
+    color: var(--color-foreground);
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    letter-spacing: -0.01em;
+  }
+  .prose-helix h2 { font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--mint); }
+  .prose-helix h3 { font-size: 1.1rem; }
+  .prose-helix p { margin: 0.6em 0; color: color-mix(in oklab, var(--color-foreground) 88%, transparent); }
+  .prose-helix ul, .prose-helix ol { margin: 0.5em 0 0.8em 1.25em; }
+  .prose-helix li { margin: 0.3em 0; }
+  .prose-helix ul li { list-style: disc; }
+  .prose-helix ol li { list-style: decimal; }
+  .prose-helix strong { color: var(--color-foreground); font-weight: 600; }
+  .prose-helix em { color: var(--mint); font-style: normal; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.1em; margin-left: 0.3em; }
+  .prose-helix code {
+    background: var(--surface-2);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    padding: 0.1em 0.4em;
+    font-size: 0.85em;
+  }
+  .prose-helix a { color: var(--mint); text-decoration: underline; }
+  .prose-helix hr { border-color: var(--color-border); margin: 1.2em 0; }
+  .prose-helix blockquote {
+    border-left: 2px solid var(--mint);
+    padding-left: 0.9em;
+    color: var(--muted-foreground);
+    margin: 0.8em 0;
+  }
+}
