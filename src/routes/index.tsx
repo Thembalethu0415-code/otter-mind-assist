@@ -109,7 +109,7 @@ const TOOLS: Tool[] = [
     desc: "Free-form research, brainstorming, and Q&A with full conversation memory.",
     span: "md:col-span-6",
   },
-] as const;
+];
 
 function Bento() {
   return (
