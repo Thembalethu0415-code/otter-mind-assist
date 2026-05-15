@@ -76,9 +76,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "AI-powered assistant for emails, meeting summaries, task planning, and chat." },
       { name: "author", content: "Helix" },
       { property: "og:title", content: "Helix — AI Productivity Assistant" },
-      { property: "og:description", content: "Draft emails, summarize meetings, plan tasks, and chat with AI." },
+      { property: "og:description", content: "AI-powered assistant for emails, meeting summaries, task planning, and chat." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Helix — AI Productivity Assistant" },
+      { name: "twitter:description", content: "AI-powered assistant for emails, meeting summaries, task planning, and chat." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ff49b9ae-3f2d-45a9-9016-4fafe7f53fd4/id-preview-88ae8d57--e1f4b735-5a15-435e-9a15-c68958daeb89.lovable.app-1778767277655.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ff49b9ae-3f2d-45a9-9016-4fafe7f53fd4/id-preview-88ae8d57--e1f4b735-5a15-435e-9a15-c68958daeb89.lovable.app-1778767277655.png" },
     ],
     links: [
       {
